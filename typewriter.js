@@ -1,8 +1,8 @@
 const words = [
   "Save Together.",
-  "Grow together with Friends. ",
+  "through rotating savings and credit systems ",
   "Build wealth the African way. ",
-  "With Rotational savings and credit. "
+  "with trusted associates "
 ];
 let i = 0;
 let timer;
