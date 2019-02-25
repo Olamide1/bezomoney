@@ -1,22 +1,22 @@
+var i = 0;
 const words = [
-  "Save Together.",
-  "through rotating savings and credit systems ",
+  "Have access to capital,",
+  "from people that you know ",
   "Build wealth the African way. ",
   "with trusted associates "
 ];
-let i = 0;
-let timer;
+var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-function typingEffect() {
+function typeWriter() {
   let word = words[i].split("");
   var loopTyping = function() {
     if (word.length > 0) {
-      document.getElementById("word").innerHTML += word.shift();
+      document.getElementById("demo").innerHTML += word.shift();
     } else {
       deletingEffect();
       return false;
     }
-    timer = setTimeout(loopTyping, 100);
+    timer = setTimeout(loopTyping, speed);
   };
   loopTyping();
 }
@@ -26,19 +26,19 @@ function deletingEffect() {
   var loopDeleting = function() {
     if (word.length > 0) {
       word.pop();
-      document.getElementById("word").innerHTML = word.join("");
+      document.getElementById("demo").innerHTML = word.join("");
     } else {
       if (words.length > i + 1) {
         i++;
       } else {
         i = 0;
       }
-      typingEffect();
+      typeWriter();
       return false;
     }
-    timer = setTimeout(loopDeleting, 200);
+    timer = setTimeout(loopDeleting, 150);
   };
   loopDeleting();
 }
 
-typingEffect();
+typeWriter();

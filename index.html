@@ -1,306 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+  <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="Rotational savings, credit, communal savings, group savings"
-    />
-    <meta name="author" content="BezoFunds Corp" />
-
-    <title>BezoFunds</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
-    <link
-      href="vendor/simple-line-icons/css/simple-line-icons.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BezoMoney</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
-
-    <!-- Custom styles for this template -->
-    <link href="css/landing-page.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-light bg-light static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">BezoMoney</a>
-        <a class="btn btn-primary" href="#">Start a Savings Team</a>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <div class="icon-bar">
+      <a class="active" href="#">BezoMoney <i class="fa fa-globe"></i></a>
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+      <a
+        ><button class="btn btn-sm btn-primary" id="start">
+          Start a savings group
+        </button></a
+      >
+    </div>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 id="demo"></h1>
+        <p>
+          <button class="btn btn-sm btn-primary">
+            Start a savings group
+          </button>
+        </p>
       </div>
-    </nav>
+    </div>
+    <script src="typewriter.js"></script>
+    <div id="London" class="tabcontent">
+      <i class="fa fa-lock"></i>
+      <h1>Security</h1>
+      <p>
+        We allow groups form according to their original communities and have
+        vetting processes for each member of a group
+      </p>
+    </div>
 
-    <!-- Masthead -->
-    <header class="masthead text-white text-center">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <div class="flex">
-              <h1 class="mb-5">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div id="Paris" class="tabcontent">
+      <i class="fa fa-search"></i>
+      <h1>Transparency</h1>
+      <p>
+        All members can access and view transaction history for their savings
+        group within the app anytime, anywhere.
+      </p>
+    </div>
 
-                <h1 class="header-sub-title" id="word"></h1>
-                <h1 class="header-sub-title blink">|</h1>
-              </h1>
-            </div>
-          </div>
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
-              <div class="form-row">
-                <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input
-                    type="email"
-                    class="form-control form-control-lg"
-                    placeholder="Enter your email..."
-                  />
-                </div>
-                <div class="col-12 col-md-3">
-                  <button
-                    type="submit"
-                    class="btn btn-block btn-lg btn-primary"
-                  >
-                    Start
-                  </button>
-                </div>
-              </div>
-            </form>
+    <div id="Tokyo" class="tabcontent">
+      <i class="fa fa-list"></i>
+      <h1>Accountability</h1>
+      <p>
+        Group Leaders and individuals are held accountable by group members, and
+        the Bezo customer success team.
+      </p>
+    </div>
+
+    <div id="Oslo" class="tabcontent">
+      <i class="fa fa-grin"></i>
+      <h1>Freedom</h1>
+      <p>
+        You are free to create wealth for yourself with our investment, property
+        acquisition and savings options.
+      </p>
+    </div>
+    <script src="js/app.js"></script>
+    <button
+      class="tablink"
+      onclick="openCity('London', this, '#3a58d8')"
+      id="defaultOpen"
+    >
+      Security
+    </button>
+    <button class="tablink" onclick="openCity('Paris', this, '#3a58d8')">
+      Transparency
+    </button>
+    <button class="tablink" onclick="openCity('Tokyo', this, '#3a58d8')">
+      Accountability
+    </button>
+    <button class="tablink" onclick="openCity('Oslo', this, '#3a58d8')">
+      Freedom
+    </button>
+
+    <div class="parallax jumbotron" align="center">
+      <h2 align="center">Meet Our Partners</h2>
+      <div class="row">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="column">
+          <div class="card">
+            <img src="assets/MEST.png" style="width:100%; height: 102px;" />
           </div>
         </div>
-      </div>
-    </header>
 
-    <!-- Icons Grid -->
-    <section class="features-icons bg-light text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-screen-desktop m-auto text-primary"></i>
-              </div>
-              <h3>Secure</h3>
-              <p class="lead mb-0">
-                Securely save and accumlate with friends.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-layers m-auto text-primary"></i>
-              </div>
-              <h3>Transparent</h3>
-              <p class="lead mb-0">
-                See how money moves out and into your group.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-check m-auto text-primary"></i>
-              </div>
-              <h3>Easy to Use</h3>
-              <p class="lead mb-0">
-                Ready to use with your own content, or customize the source
-                files!
-              </p>
-            </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="assets/flutterwave.png"
+              alt="Mike"
+              style="width:100%; height: 102px;"
+            />
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Image Showcases -->
-    <!--<section class="showcase">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters">
-          <div
-            class="col-lg-6 order-lg-2 text-white showcase-img"
-            style="background-image: url('img/bg-showcase-1.jpg');"
-          ></div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Fully Responsive Design</h2>
-            <p class="lead mb-0">
-              When you use a theme created by Start Bootstrap, you know that the
-              theme will look great on any device, whether it's a phone, tablet,
-              or desktop the page will behave responsively!
-            </p>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div
-            class="col-lg-6 text-white showcase-img"
-            style="background-image: url('img/bg-showcase-2.jpg');"
-          ></div>
-          <div class="col-lg-6 my-auto showcase-text">
-            <h2>Updated For Bootstrap 4</h2>
-            <p class="lead mb-0">
-              Newly improved, and full of great utility classes, Bootstrap 4 is
-              leading the way in mobile responsive web development! All of the
-              themes on Start Bootstrap are now using Bootstrap 4!
-            </p>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div
-            class="col-lg-6 order-lg-2 text-white showcase-img"
-            style="background-image: url('img/bg-showcase-3.jpg');"
-          ></div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Easy to Use &amp; Customize</h2>
-            <p class="lead mb-0">
-              Landing Page is just HTML and CSS with a splash of SCSS for users
-              who demand some deeper customization options. Out of the box, just
-              add your content and images, and your new landing page will be
-              ready to go!
-            </p>
+        <div class="column">
+          <div class="card">
+            <img
+              src="assets/gtbank.png"
+              alt="John"
+              style="width:100%; height: 102px;"
+            />
           </div>
         </div>
       </div>
-    </section> -->
-
-    <!-- Testimonials -->
-    <section class="testimonials text-center bg-light">
-      <div class="container">
-        <h1 class="mb-5">Our Partners</h1>
-        <div class="row">
-          <div class="col-lg-4">
-            <!--<div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img
-                class="img-fluid rounded-circle mb-3"
-                src="img/testimonials-1.jpg"
-                alt=""
-              />
-              <h5>Guaranty Trust Bank</h5>
-              <p class="font-weight-light mb-0"></p>
-            </div>-->
-          </div>
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img
-                class="img-fluid rounded-circle mb-3"
-                src="img/MEST.png"
-                alt=""
-              />
-              <h5>MEST</h5>
-              <p class="font-weight-light mb-0"></p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <!--  <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img
-                class="img-fluid rounded-circle mb-3"
-                src="img/testimonials-3.jpg"
-                alt=""
-              />
-              <h5>Sarah W.</h5>
-              <p class="font-weight-light mb-0"></p>
-            </div>-->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="call-to-action text-white text-center">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <h2 class="mb-4">Cooperative Finance Platform</h2>
-          </div>
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
-              <div class="form-row">
-                <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input
-                    type="email"
-                    class="form-control form-control-lg"
-                    placeholder="Enter your email..."
-                  />
-                </div>
-                <div class="col-12 col-md-3">
-                  <button
-                    type="submit"
-                    class="btn btn-block btn-lg btn-primary"
-                  >
-                    Sign up!
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-            <ul class="list-inline mb-2">
-              <li class="list-inline-item">
-                <a href="#">About</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Contact</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-            </ul>
-            <p class="text-muted small mb-4 mb-lg-0">
-              Made with &hearts; by BezoGroup.
-            </p>
+    <footer class="page-footer font-small unique-color-dark">
+      <div style="background-color: #3a58d8;">
+        <div class="container">
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+            <!-- Grid column -->
+            <div
+              class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0"
+            >
+              <h6 class="mb-0">Get connected with us on social networks!</h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fa fa-facebook-f white-text mr-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fa fa-twitter white-text mr-4"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fa fa-instagram white-text"> </i>
+              </a>
+            </div>
+            <!-- Grid column -->
           </div>
-          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item mr-3">
-                <a href="#">
-                  <i class="fab fa-facebook fa-2x fa-fw"></i>
-                </a>
-              </li>
-              <li class="list-inline-item mr-3">
-                <a href="#">
-                  <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-instagram fa-2x fa-fw"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <!-- Grid row-->
         </div>
       </div>
-    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="typewriter.js"></script>
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase font-weight-bold">BezoMoney</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              Creating wealth with communities through community-based savings
+              and credit groups.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Useful Links</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              <a href="#!">FAQs</a>
+            </p>
+            <p>
+              <a href="#!">How it works</a>
+            </p>
+            <p>
+              <a href="#!">Press</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Join Us</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              <a href="#!">Create a Group</a>
+            </p>
+            <p>
+              <a href="#!">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!">Careers</a>
+            </p>
+            <p>
+              <a href="#!">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <hr
+              class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              <i class="fa fa-home mr-3"></i> 20, Aluguntugui Avenue, East
+              Legon, Accra Ghana.
+            </p>
+            <p><i class="fa fa-envelope mr-3"></i> info@bezomoney.com</p>
+            <p><i class="fa fa-phone mr-3"></i> + 233 50 169 3320</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2019 Copyright:
+        <a> BezoMoney</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
   </body>
 </html>
